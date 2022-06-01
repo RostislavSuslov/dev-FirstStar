@@ -72,9 +72,9 @@
 }
 
 body {
-	font-family: 'Gilroy-Regular';
-	color: #333;
-	background-color: #fff;
+	font-family: $font-primary;
+	color: #626874;
+	background-color: #EDF1F4;
 	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
@@ -133,16 +133,16 @@ body {
 
 /*2*/
 ::selection {
-    color: #000;
-    background: $secondary-color;
+    color: $white;
+    background: $primary-color;
 }
 
 a {
     color: $primary-color;
-
+    transition: .2s;
     &:hover {
-        text-decoration: underline;
-        color: $primary-color;
+        text-decoration: none;
+        color: $secondary-color;
     }
 }
 
@@ -194,16 +194,18 @@ ul {
 
     li {
         display: flex;
-        align-items: center;
+       
 
         &:before {
             content: "";
             margin-left: 20px;
             margin-right: 20px;
+            margin-top: 7px;
             background-color: $primary-color;
             border-radius: 50%;
-            width: 6px;
-            height: 6px;
+            width: 10px;
+            min-width: 10px;
+            height: 10px;
         }
     }
 }
@@ -213,12 +215,12 @@ ul {
 
 
 /*5-6*/
-body {
-    font-family: 'HeliosC';
-}
 
 .font-weight-light {
-    font-family: 'HeliosLightC';
+    font-weight: lighter;
+}
+.font-weight-bold {
+    font-weight: bold;
 }
 
 /*7-8*/
@@ -235,38 +237,38 @@ h6,
 .title_5,
 .title_6 {
     line-height: 1.4;
-    color: #000;
+    color: #626874;
     font-weight: 600;
 }
 
 h1,
 .title_1 {
-    font-size: 46px;
+    font-size: 54px;
 }
 
 h2,
 .title_2 {
-    font-size: 30px;
+    font-size: 42px;
 }
 
 h3,
 .title_3 {
-    font-size: 20px;
+    font-size: 32px;
 }
 
 h4,
 .title_4 {
-    font-size: 18px;
+    font-size: 28px;
 }
 
 h5,
 .title_5 {
-    font-size: 16px;
+    font-size: 24px;
 }
 
 h6,
 .title_6 {
-    font-size: 14px;
+    font-size: 20px;
 }
 
 
@@ -282,21 +284,24 @@ input[type="radio"] {
 
         &:hover {
             color: #060606;
-
+            &:before {
+                background-color: $secondary-color;
+            }
         }
 
         &:before {
             content: '';
-            padding: 9px;
             display: inline-block;
             vertical-align: middle;
             cursor: pointer;
-            margin-right: 19px;
-            width: 16px;
-            height: 16px;
+            margin-right: 15px;
+            width: 30px;
+            height: 30px;
             background-color: #ffffff;
-            border: 1px solid #ededed;
-            border-radius: 2px;
+            border: 1px solid #AFB4BE;
+            border-radius: 4px;
+            transition: .1s;
+            background-position: center;
         }
     }
 }
@@ -309,9 +314,8 @@ input[type=radio]+label:before {
 
 input[type=radio]:checked+label:before {
     border-radius: 50%;
-    background: url(assets/img/radio.png) center no-repeat;
-    background-size: contain;
-    border: 1px solid transparent;
+ 
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.53737 0.354294C8.66452 -0.118099 9.33548 -0.118098 9.46263 0.354295L10.8411 5.47566L13.2649 4.07973C13.6889 3.83558 14.1627 4.30962 13.9187 4.73369L12.5232 7.15829L17.6456 8.53795C18.1181 8.6652 18.1181 9.3348 17.6456 9.46205L12.5232 10.8417L13.9187 13.2663C14.1627 13.6904 13.6889 14.1644 13.2649 13.9203L10.8411 12.5243L9.46263 17.6457C9.33548 18.1181 8.66452 18.1181 8.53737 17.6457L7.15889 12.5243L4.73505 13.9203C4.31111 14.1644 3.83723 13.6904 4.0813 13.2663L5.47679 10.8417L0.354351 9.46205C-0.118117 9.3348 -0.118117 8.6652 0.354351 8.53795L5.47679 7.1583L4.0813 4.73369C3.83723 4.30962 4.31111 3.83558 4.73505 4.07973L7.15889 5.47567L8.53737 0.354294ZM8.64727 10.4306L9.0002 12.574L9.35312 10.4307L9.00015 10.2623L8.64727 10.4306ZM7.56998 9.35304L7.73823 9.00001L7.56997 8.64697L5.42738 9L7.56998 9.35304ZM8.64726 7.5694L9.00015 7.73769L9.35312 7.56936L9.0002 5.42603L8.64726 7.5694ZM10.4303 8.64696L10.2621 9.00001L10.4303 9.35305L12.573 9L10.4303 8.64696ZM7.30308 7.30237L9.00017 8.1117L10.6973 7.30237L9.88819 9L10.6973 10.6976L9.00017 9.88831L7.30308 10.6976L8.11215 9L7.30308 7.30237Z' fill='%230B305D'/%3E%3C/svg%3E") center/18px no-repeat $secondary-color;
 }
 
 
@@ -320,9 +324,8 @@ input:checked+label {
 
     &:before {
         content: '';
-        background: url(assets/img/checkbox.png) center no-repeat;
-        background-size: contain;
-        border: 1px solid transparent;
+        background:url("data:image/svg+xml,%3Csvg width='18' height='13' viewBox='0 0 18 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.738 0.323256L6.37375 10.6868C6.30407 10.7567 6.22126 10.8122 6.13007 10.8501C6.03888 10.888 5.94111 10.9075 5.84237 10.9075C5.74363 10.9075 5.64586 10.888 5.55468 10.8501C5.46349 10.8122 5.38068 10.7567 5.311 10.6868L1.303 6.67501C1.23332 6.60505 1.15051 6.54954 1.05932 6.51166C0.968132 6.47379 0.870363 6.45429 0.771623 6.45429C0.672883 6.45429 0.575114 6.47379 0.483927 6.51166C0.392741 6.54954 0.30993 6.60505 0.240248 6.67501C0.170291 6.74469 0.114781 6.8275 0.076905 6.91869C0.0390287 7.00987 0.0195312 7.10764 0.0195312 7.20638C0.0195312 7.30512 0.0390287 7.40289 0.076905 7.49408C0.114781 7.58526 0.170291 7.66807 0.240248 7.73776L4.24975 11.7465C4.67271 12.1687 5.2459 12.4058 5.8435 12.4058C6.4411 12.4058 7.01429 12.1687 7.43725 11.7465L17.8007 1.38526C17.8706 1.31559 17.926 1.23282 17.9638 1.14171C18.0016 1.05059 18.0211 0.952907 18.0211 0.854256C18.0211 0.755605 18.0016 0.657923 17.9638 0.566805C17.926 0.475688 17.8706 0.392925 17.8007 0.323256C17.7311 0.253299 17.6483 0.197789 17.5571 0.159913C17.4659 0.122037 17.3681 0.102539 17.2694 0.102539C17.1706 0.102539 17.0729 0.122037 16.9817 0.159913C16.8905 0.197789 16.8077 0.253299 16.738 0.323256Z' fill='%230B305D'/%3E%3C/svg%3E%0A") center/18px no-repeat $secondary-color;
+ 
     }
 }
 
@@ -406,15 +409,31 @@ input:checked+label {
 
 /*12*/
 /*13*/
+.scroll-x{
+    overflow: auto;
+}
+
+.scroll-x::-webkit-scrollbar-thumb{
+    background-color: $primary-color;
+    border-radius: 5px;
+}
+.scroll-x::-webkit-scrollbar {
+   height:  6px;
+   background-color: #E5E5E5;;
+   border: 0px solid #E5E5E5;
+   border-radius: 5px;
+}
+
 .scroll::-webkit-scrollbar {
     width: 6px;
+    border-radius: 5px;
 }
 
 .scroll::-webkit-scrollbar-thumb {
     background-color: $primary-color;
     background-clip: padding-box;
     border: 0px solid #f9f9f9;
-
+    border-radius: 5px;
     &:hover {
         background-color: #41a6f4;
 

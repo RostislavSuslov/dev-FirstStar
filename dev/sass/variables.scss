@@ -1,14 +1,14 @@
 ///fonts///
-$font-primary: "Open Sans";
+$font-primary: "Inter";
 $font-secondary:  "monospace";
-$font-size: 16px;
+$font-size: 18px;
 $section-title: 32px;
 ///colors///
 $white: #fff;
 $black: #000;
 
-$primary-color: #222;
-$secondary-color: #f00;
+$primary-color: #005BBB;
+$secondary-color: #FFD018;
 
 /*grey*/
 $label-red: #F93838;
@@ -19,15 +19,16 @@ $required: $primary-color;
 $placeholder: #bdbdbd;
 
 /*text-default*/
-$font-size: 16px;
-$line-height: 1.4;
-$text: #000;
+ 
+$line-height: 1.67;
+$text:#626874;
+
 
 /*   <Breadcrumbs/>   */
-$breadcrumbs-slash: $secondary-color;
-$breadcrumbs-link: $secondary-color;
+$breadcrumbs-slash: #AFB4BE;
+$breadcrumbs-link: #3C597D;
 $breadcrumbs-link-hover: $primary-color;
-$breadcrumbs-last-child: #B2B1B1;
+$breadcrumbs-last-child: #AFB4BE;
 
 /*   <Muve-top/>   */
 $muve-top-background: $primary-color;
