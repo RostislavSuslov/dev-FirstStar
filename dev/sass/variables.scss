@@ -1,34 +1,33 @@
 ///fonts///
 $font-primary: "Inter";
-$font-secondary:  "monospace";
+$font-secondary: "monospace";
 $font-size: 18px;
 $section-title: 32px;
 ///colors///
 $white: #fff;
 $black: #000;
 
-$primary-color: #005BBB;
-$secondary-color: #FFD018;
+$primary-color: #005bbb;
+$secondary-color: #ffd018;
 
 /*grey*/
-$label-red: #F93838;
-$label-purpur: #8683EF;
-$label-green: #70D61F;
+$label-red: #f93838;
+$label-purpur: #8683ef;
+$label-green: #70d61f;
 
 $required: $primary-color;
-$placeholder: #bdbdbd;
+$placeholder: #626874;
 
 /*text-default*/
- 
-$line-height: 1.67;
-$text:#626874;
 
+$line-height: 1.67;
+$text: #626874;
 
 /*   <Breadcrumbs/>   */
-$breadcrumbs-slash: #AFB4BE;
-$breadcrumbs-link: #3C597D;
+$breadcrumbs-slash: #afb4be;
+$breadcrumbs-link: #3c597d;
 $breadcrumbs-link-hover: $primary-color;
-$breadcrumbs-last-child: #AFB4BE;
+$breadcrumbs-last-child: #afb4be;
 
 /*   <Muve-top/>   */
 $muve-top-background: $primary-color;

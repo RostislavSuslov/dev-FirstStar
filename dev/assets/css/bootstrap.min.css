@@ -662,7 +662,7 @@ progress {
     }
 }
 
-@media (min-width:1025px) {
+@media (min-width: 992px) {
 
     .container,
     .container-lg,
@@ -835,7 +835,7 @@ progress {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
     .col-lg {
         flex: 1 0 0%
     }
@@ -1477,7 +1477,7 @@ progress {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
     .col-lg-auto {
         flex: 0 0 auto;
         width: auto
@@ -3954,7 +3954,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
     .dropdown-menu-lg-start {
         --bs-position: start
     }
@@ -4585,7 +4585,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
     .navbar-expand-lg {
         flex-wrap: nowrap;
         justify-content: flex-start
@@ -5586,7 +5586,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
     .list-group-horizontal-lg {
         flex-direction: row
     }
@@ -6063,7 +6063,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
 
     .modal-lg,
     .modal-xl {
@@ -7044,7 +7044,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
     .sticky-lg-top {
         position: -webkit-sticky;
         position: sticky;
@@ -9646,7 +9646,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
     .float-lg-start {
         float: left !important
     }

@@ -1,4 +1,22 @@
 @media screen and (max-width: 1024px) {
+    .projects-filters{
+        .col-lg-3 {
+            margin-bottom: 24px;
+        }
+
+    }
+
+    .wp-pagenavi {    
+        margin: 42px auto 51px;
+    }
+
+    .projects-grid {
+        // padding: 0 9px;
+        .wrapper {
+            padding-left: 9px;
+            padding-right: 9px;
+        }
+    }
 }
 
 

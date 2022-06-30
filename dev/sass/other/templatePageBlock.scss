@@ -1,0 +1,87 @@
+h1.title-icon {
+    font-size: 42px;
+    line-height: 1.28;
+    margin-bottom: 57px;
+}
+
+.select-title {
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+
+.projects-filters {
+    display: flex;
+    justify-content: center;
+    margin: 0 12px 90px;
+
+   .wrapper{
+        background-color: #fff;
+        padding: 20px 30px 30px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 18px #0b305d33; 
+        position: relative;
+   }
+}
+
+.btn-filters-clean {
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'%3E%3Cpath d='M9.49986 0.499985C9.35922 0.359382 9.16849 0.280396 8.96961 0.280396C8.77074 0.280396 8.58001 0.359382 8.43937 0.499985L4.99986 3.93949L1.56036 0.499985C1.41972 0.359382 1.22899 0.280396 1.03011 0.280396C0.83124 0.280396 0.640509 0.359382 0.499863 0.499985C0.35926 0.640631 0.280273 0.831362 0.280273 1.03024C0.280273 1.22911 0.35926 1.41984 0.499863 1.56049L3.93936 4.99999L0.499863 8.43949C0.35926 8.58013 0.280273 8.77086 0.280273 8.96974C0.280273 9.16861 0.35926 9.35934 0.499863 9.49999C0.640509 9.64059 0.83124 9.71958 1.03011 9.71958C1.22899 9.71958 1.41972 9.64059 1.56036 9.49999L4.99986 6.06049L8.43937 9.49999C8.58001 9.64059 8.77074 9.71958 8.96961 9.71958C9.16849 9.71958 9.35922 9.64059 9.49986 9.49999C9.64047 9.35934 9.71945 9.16861 9.71945 8.96974C9.71945 8.77086 9.64047 8.58013 9.49986 8.43949L6.06036 4.99999L9.49986 1.56049C9.64047 1.41984 9.71945 1.22911 9.71945 1.03024C9.71945 0.831362 9.64047 0.640631 9.49986 0.499985V0.499985Z' fill='%23005BBB'/%3E%3C/svg%3E");
+    color: $primary-color;
+
+    &:hover {
+        filter: invert(146%) sepia(29%) saturate(1426%) hue-rotate(204deg) brightness(141%) contrast(104%);
+        color: $primary-color;
+    }
+}
+
+.projects-grid {
+
+    .item-project {
+        margin: 0 3px 60px;
+    }
+
+    + .wp-pagenavi {
+        margin-top: 0;
+    }
+
+}
+
+.form {
+    margin-bottom: 132px;
+}
+
+.seo-text {
+    margin-bottom: 147px;
+}
+
+.progress {
+    font-size: 14px;
+    line-height: 60px;
+    color: #AFB4BE;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    position: relative;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    margin-left: 20px;
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(-90deg);
+
+        circle {
+            stroke-width: 6px;
+        }
+    }
+}
