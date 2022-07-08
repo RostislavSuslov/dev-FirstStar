@@ -1,0 +1,11 @@
+.input-wrap .note::after                 {z-index: -1;}
+.header .sub-menu                        {z-index: 1;}
+.input-wrap .note                        {z-index: 1;}
+.close                                   {z-index: 1;}
+.item-project__img::before               {z-index: 1;}
+.home-top > *                            {z-index: 1;}
+.markup-link                             {z-index: 2;}
+.slider-def .slick-prev,
+.slider-def .slick-next                  {z-index: 3;}
+.scrolltop                               {z-index: 4;}
+.header                                  {z-index: 5;}
