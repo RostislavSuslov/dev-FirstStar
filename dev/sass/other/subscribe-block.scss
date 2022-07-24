@@ -1,0 +1,20 @@
+
+.subscribe {
+    >img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__content {
+        background-color: #002c5e;
+        padding: 60px 0px;
+    }
+
+    .title-icon {
+        color: #fff;
+    }
+
+    .title-descr {
+        color: #afb4be;
+    }
+}

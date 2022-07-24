@@ -1,0 +1,26 @@
+.action-page {
+    @extend .article;
+}
+
+.item-action {
+    @extend .item-project;
+
+    .item-project__title {
+        justify-content: flex-start;
+        margin-bottom: 12px;
+        font-size: 18px;
+        line-height: 1.4;
+        img{
+            margin-right: 30px;
+            max-width: 44px;
+        }
+    }
+    .item-project__descr {
+        margin-bottom: 50px;
+    }
+}
+
+
+.interest-actions {
+    margin: 106px auto -60px;
+}

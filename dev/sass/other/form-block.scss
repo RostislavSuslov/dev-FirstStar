@@ -1,0 +1,271 @@
+
+.input-wrap {
+    position: relative;
+
+    .icon-wrap {
+        position: absolute;
+        right: 16px;
+        top: 14px;
+
+        i {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+
+            &:hover+.note {
+                opacity: 1;
+            }
+
+            &:hover {
+                svg {
+                    path {
+                        fill: #009edd;
+                    }
+                }
+            }
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .note {
+        background-color: #fff;
+        position: absolute;
+        width: 370px;
+        text-align: center;
+        padding: 16px 20px 14px;
+        left: -191px;
+        bottom: 45px;
+        box-shadow: 0px 0px 18px rgba(11, 48, 93, 0.2);
+        border-radius: 6px;
+        opacity: 0;
+        pointer-events: none;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.form-tab {
+    background-color: #fff;
+    padding: 40px 80px 40px;
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 12px 30px rgba(11, 48, 93, 0.15);
+    border-radius: 18px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 13px;
+        background: #009edd;
+        border-radius: 18px 18px 0px 0px;
+    }
+
+    &__tabs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn-tab {
+            width: 240px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 18px;
+            border-radius: 6px;
+            background: #edf1f4;
+            margin: 0px 10px;
+            position: relative;
+
+            cursor: pointer;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 9px;
+                height: 9px;
+                background: $primary-color;
+                left: 50%;
+                transform: rotate(45deg) translateX(-50%);
+                bottom: -7px;
+                opacity: 0;
+            }
+
+            &--active {
+                background: $primary-color !important;
+                color: #fff;
+                pointer-events: none;
+                transition: all 0s !important;
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                background: #009edd;
+                color: #fff;
+                transition: all 0.2s;
+            }
+        }
+    }
+
+    &__descr {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+        span {
+            color: $primary-color;
+        }
+    }
+
+    form>* {
+        margin-top: 24px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    textarea {
+        height: 108px;
+        resize: none;
+        border-radius: 18px;
+    }
+
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.select {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e1e1e1;
+    border-radius: 30px;
+    padding: 11px 35px 11px 20px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    font-size: 16px;
+    line-height: 30px;
+    width: 100%;
+    color: #626874;
+    font-weight: 400;
+    height: 54px;
+    float: none;
+
+    span {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &:focus {
+        // background-color: #f9f9f9;
+        border: 1px solid #ffd018;
+        box-shadow: none;
+        outline: none;
+        color: #0b305d;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 14px;
+        top: 26px;
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.5897 0.841713C11.5123 0.763606 11.4201 0.701611 11.3185 0.659304C11.217 0.616996 11.1081 0.595215 10.9981 0.595215C10.888 0.595215 10.7791 0.616996 10.6776 0.659304C10.576 0.701611 10.4839 0.763606 10.4064 0.841713L6.58972 4.65837C6.51225 4.73648 6.42009 4.79847 6.31854 4.84078C6.21699 4.88309 6.10807 4.90487 5.99806 4.90487C5.88805 4.90487 5.77912 4.88309 5.67758 4.84078C5.57603 4.79847 5.48386 4.73648 5.40639 4.65837L1.58972 0.841713C1.51225 0.763606 1.42009 0.701611 1.31854 0.659304C1.21699 0.616996 1.10807 0.595215 0.998056 0.595215C0.888046 0.595215 0.779125 0.616996 0.677576 0.659304C0.576026 0.701611 0.483859 0.763606 0.40639 0.841713C0.25118 0.997848 0.164063 1.20906 0.164062 1.42921C0.164063 1.64937 0.25118 1.86058 0.40639 2.01671L4.23139 5.8417C4.70014 6.30987 5.33555 6.57284 5.99806 6.57284C6.66056 6.57284 7.29597 6.30987 7.76472 5.8417L11.5897 2.01671C11.7449 1.86058 11.8321 1.64937 11.8321 1.42921C11.8321 1.20906 11.7449 0.997848 11.5897 0.841713Z' fill='%23374957'/%3E%3C/svg%3E%0A");
+        width: 14px;
+        height: 9px;
+        background-size: contain;
+        background-position: center;
+        transition: all 0.2s;
+    }
+
+    &.open {
+        &::after {
+            transform: scale(1, -1);
+        }
+    }
+
+    .list {
+        background-color: #fff;
+        border: 1px solid #cbd0da;
+        border-radius: 6px;
+        padding: 20px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+
+        li:hover {
+            color: #009edd;
+        }
+    }
+
+    ul li:before {
+        display: none;
+    }
+
+    .option {
+        padding: 0;
+    }
+}
+
+.form-subscribe {
+    form {
+        max-width: 441px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+
+        .btn {
+            position: absolute;
+            right: 3px;
+            top: 3px;
+        }
+    }
+}
+.home {
+    .form {
+        margin-bottom: 0;
+    }
+}
+
+.form {
+    position: relative;
+
+    .abs-form-img {
+        position: absolute;
+        bottom: 30px;
+
+        &-l {
+            left: -300px;
+            width: 928px;
+        }
+
+        &-r {
+            right: -108px;
+            width: 560px;
+        }
+    }
+}

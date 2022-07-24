@@ -42,4 +42,9 @@ jQuery(document).ready(function($) {
             }
         }
     })
+
+
+    $('.item-project__info-wrap').matchHeight({
+        property: 'min-height'
+    });
 })

@@ -1,13 +1,17 @@
 ///fonts///
 $font-primary: "Inter";
 $font-secondary: "monospace";
-$font-size: 18px;
+$font-size: 16px;
+$line-height: 1.5;
+$text: #626874;
 $section-title: 32px;
 ///colors///
 $white: #fff;
 $black: #000;
 
 $primary-color: #005bbb;
+$primary-color-hover: #009EDD;
+
 $secondary-color: #ffd018;
 
 /*grey*/
@@ -18,10 +22,9 @@ $label-green: #70d61f;
 $required: $primary-color;
 $placeholder: #626874;
 
-/*text-default*/
+ 
 
-$line-height: 1.67;
-$text: #626874;
+
 
 /*   <Breadcrumbs/>   */
 $breadcrumbs-slash: #afb4be;

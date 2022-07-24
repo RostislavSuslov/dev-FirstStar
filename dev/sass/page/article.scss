@@ -1,4 +1,118 @@
 /*article-page*/
 
+.article {
+    h1{
+      
 
+        &.title-icon{
+            max-width: 1046px;
+            padding: 0 12px;
+            margin: 90px auto 54px;
+        }
+    }
+    .post-item{
+        max-width: 1350px;
+        background: #FFFFFF;
+        border-radius: 24px;
+        padding: 60px 115px;
+        .repost{
+            margin-top: 96px;
+        }
+    }
+
+    ul,ol {   
+        margin: 24px 0 36px;
+        li {
+            display: flex;
+            margin-bottom: 12px;
+        }
+    }
+    .news-home {
+        padding: 0;
+        margin: 120px auto 96px;
+    }
+    .project-slider {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 96px auto 203px;
+    }
+}
+
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    flex-wrap: wrap;
+    &__prev,
+    &__next {
+        max-width: 340px;
+        line-height: 1.8;
+    }
+
+    &__prev {
+        padding-left: 50px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Cg clip-path='url(%23clip0_159_3635)'%3E%3Cpath d='M1.10061 17.6124L5.93811 22.4999C6.05431 22.617 6.19256 22.71 6.34489 22.7735C6.49721 22.8369 6.66059 22.8696 6.82561 22.8696C6.99062 22.8696 7.154 22.8369 7.30633 22.7735C7.45865 22.71 7.5969 22.617 7.71311 22.4999C7.83027 22.3837 7.92326 22.2454 7.98672 22.0931C8.05018 21.9408 8.08285 21.7774 8.08285 21.6124C8.08285 21.4474 8.05018 21.284 7.98672 21.1317C7.92326 20.9793 7.83027 20.8411 7.71311 20.7249L3.26311 16.2499H28.7506C29.0821 16.2499 29.4001 16.1182 29.6345 15.8838C29.8689 15.6493 30.0006 15.3314 30.0006 14.9999C30.0006 14.6684 29.8689 14.3504 29.6345 14.116C29.4001 13.8816 29.0821 13.7499 28.7506 13.7499H3.18811L7.71311 9.22487C7.93472 8.9924 8.05834 8.68355 8.05834 8.36237C8.05834 8.0412 7.93472 7.73235 7.71311 7.49987C7.5969 7.38271 7.45865 7.28972 7.30633 7.22626C7.154 7.1628 6.99062 7.13013 6.82561 7.13013C6.66059 7.13013 6.49721 7.1628 6.34489 7.22626C6.19256 7.28972 6.05431 7.38271 5.93811 7.49987L1.10061 12.3124C0.398354 13.0155 0.00390625 13.9686 0.00390625 14.9624C0.00390625 15.9561 0.398354 16.9092 1.10061 17.6124Z' fill='%23005BBB'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_159_3635'%3E%3Crect width='30' height='30' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") left 0 no-repeat;
+    }
+    
+    &__next {
+        padding-right: 50px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Cg clip-path='url(%23clip0_159_3637)'%3E%3Cpath d='M28.9 12.3874L24.0625 7.49987C23.9463 7.38271 23.808 7.28972 23.6557 7.22626C23.5034 7.1628 23.34 7.13013 23.175 7.13013C23.01 7.13013 22.8466 7.1628 22.6943 7.22626C22.542 7.28972 22.4037 7.38271 22.2875 7.49987V7.49987C22.0547 7.73408 21.924 8.05089 21.924 8.38112C21.924 8.71136 22.0547 9.02817 22.2875 9.26237L26.7375 13.7499H1.25C0.918479 13.7499 0.600537 13.8816 0.366117 14.116C0.131696 14.3504 0 14.6684 0 14.9999H0C0 15.3314 0.131696 15.6493 0.366117 15.8838C0.600537 16.1182 0.918479 16.2499 1.25 16.2499H26.8125L22.2875 20.7624C22.1703 20.8786 22.0773 21.0168 22.0139 21.1692C21.9504 21.3215 21.9178 21.4849 21.9178 21.6499C21.9178 21.8149 21.9504 21.9783 22.0139 22.1306C22.0773 22.2829 22.1703 22.4212 22.2875 22.5374C22.4037 22.6545 22.542 22.7475 22.6943 22.811C22.8466 22.8745 23.01 22.9071 23.175 22.9071C23.34 22.9071 23.5034 22.8745 23.6557 22.811C23.808 22.7475 23.9463 22.6545 24.0625 22.5374L28.9 17.6874C29.6023 16.9842 29.9967 16.0311 29.9967 15.0374C29.9967 14.0436 29.6023 13.0905 28.9 12.3874V12.3874Z' fill='%23005BBB'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_159_3637'%3E%3Crect width='30' height='30' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") right 0 no-repeat;
+        text-align: right;
+    }
+}
 /**/
+
+
+.table-container{
+    overflow: auto;
+    margin-bottom: 45px;
+    @extend .scroll-x;
+}
+ 
+ 
+ 
+.table {
+
+    thead {
+        tr {
+            border-bottom: 2px solid #AFB4BE;
+        }   
+    } 
+    
+    tr {
+        border-bottom: 1px solid #CBD0DA;
+        &:last-child {
+            border-bottom: 2px solid #AFB4BE;
+        }
+    }
+
+    td {
+        padding: 17px 20px;
+        color: #626874;
+        vertical-align: middle;
+    }
+    
+    th {
+        padding: 32px 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        align-items: center;
+        color: #0B305D;
+    }
+
+    td, th {
+        text-align: center;
+         line-height: 1.2;
+         white-space: nowrap;
+        &:first-child {
+            text-align: left;
+            min-width: 180px;
+            white-space: break-spaces;
+        }
+    }
+} 
+
+
