@@ -1,0 +1,118 @@
+:root {
+    --overlap-padding: 386px;
+    --overlap-margin: -286px;
+}
+
+.about-page {
+    @extend .article;
+
+    .breadcrumb {
+        a {
+            color: #FFFFFF;
+        }
+    }
+
+    .first-screen {
+        margin-top: -105px;
+        +.wrapper {
+            .post-item {
+                padding-top: 84px;
+            }
+        }
+    }
+}
+
+
+.first-screen {
+    min-height: 912px;
+    background: url(assets/img/about-page-first-screen-bg.png) center/cover no-repeat #041629;
+    background-position: center -5vw;
+    padding-bottom: var(--overlap-padding);
+    margin-bottom: var(--overlap-margin);
+    // position: relative;
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     bottom: 96px;
+    //     left: 0;
+    //     display: flex;
+    //     height: 290px;
+    //     width: 100%;
+    //     background: linear-gradient(180deg, rgba(4, 30, 53, 0) 0%, #041629 80.73%);
+    //     z-index: 1;
+    // }
+
+    h1 {
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 1.28;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    p {
+        color: #AFB4BE;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 12px;
+        max-width: 1144px;
+        margin: 0 auto 24px;
+    }
+}
+
+.first-screen__logo {
+    margin-bottom: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.our-values {
+    margin: 48px auto 60px;
+}    
+
+.value-item {
+    text-align: center;
+    width: 100%;
+    max-width: 314px;
+    margin: 0 auto 48px;
+
+    .icon-svg {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 24px;
+    }
+
+    h6 {
+        margin-bottom: 12px;
+    }
+}
+
+
+.about-page {
+    .about {
+        min-height: 1076px;
+     
+            padding: 443px 0px 338px;
+            margin: -300px auto -190px;
+        h2 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .row-custom-info{
+            border: none;
+        }
+        .about__info {
+            text-align: center;
+        }
+    }
+    .post-item {
+        position: relative;
+        z-index: 1;
+    }
+}

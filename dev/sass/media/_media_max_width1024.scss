@@ -3,9 +3,9 @@
         padding: 30px 15px 30px 0;
         margin: 0;
     }
-    
-    section{
-        .title-icon{
+
+    section {
+        .title-icon {
             margin-bottom: 36px;
             font-size: 24px;
         }
@@ -132,6 +132,25 @@
         }
     }
 
+    .reviews-list {
+        margin: 84px auto;
+
+        .item-partner-coment {
+            margin-bottom: 84px;
+        }
+
+        +.wp-pagenavi {
+            margin: -50px auto 84px;
+        }
+    }
+
+    .item-partner-coment__img {
+        width: 94px;
+        height: 94px;
+        border: 9px solid #fff;
+        margin: -107px auto 5px;
+    }
+
     .article {
         .post-item {
             .repost {
@@ -155,6 +174,7 @@
     .post-navigation {
         justify-content: center;
         margin: 48px auto 84px;
+
         .post-navigation__prev {
             margin-bottom: 12px;
         }
@@ -305,23 +325,107 @@
     .actions-page {
 
         .item-project__title {
-            
+
             img {
                 margin-right: 15px;
                 max-width: 30px;
             }
-        } 
-    } 
+        }
+    }
 
     .interest-actions {
         margin: 72px auto -12px;
     }
-    
+
     .template-grid {
 
         .item-action {
-           margin: 0 auto 24px !important;
+            margin: 0 auto 24px !important;
         }
     }
-}
 
+    .about-page {
+        .first-screen {
+            margin-top: -105px;
+            padding-top: 105px;
+            padding-bottom: 24px;
+            margin-bottom: 0;
+            min-height: auto;
+
+            h1 {
+                font-size: 32px;
+                margin-bottom: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .first-screen__logo {
+        display: none;
+    }
+
+
+    .about-page {
+        .first-screen {
+            +.wrapper {
+                .post-item {
+                    padding-top: 16px;
+                }
+            }
+        }
+
+        .about {
+            min-height: auto;
+            padding: 115px 0px 78px;
+            margin: 0 auto;
+            background-position: center -250px;
+        }
+    }
+
+    .value-item {
+        margin: 0 auto 36px;
+    }
+
+    .img-grid {
+        margin: 36px auto;
+    }
+
+    .accordion-container {
+        margin-bottom: 72px;
+    }
+
+
+    .accordion-title {
+        font-size: 18px;
+    }
+
+    .accordion-button {
+        font-size: 16px;
+        padding: 12px 15px;
+        min-height: 72px;
+    }
+
+    .accordion-body {
+        padding: 0 15px 16px;
+    }
+
+    .form-questions {
+        margin-bottom: 33px;
+        .title-icon {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+    }
+    .contact-row {
+        margin: 36px auto 60px;
+        .contacts {
+            margin-bottom: 60px;
+        }
+    }
+    .contact-item {
+        margin-bottom: 28px;
+    }
+}

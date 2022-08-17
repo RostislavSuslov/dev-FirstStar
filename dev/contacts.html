@@ -1,0 +1,96 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="page-contacts">
+    @@include('templates/breadcrumbs.html')
+    <h1 class="title-icon">
+        <i class="icon-svg icon-marker"></i>
+        <span>Контактна інформація</span>
+    </h1>
+    <div class="contact-row">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contacts">
+                        <div class="contact-item">
+                            <div class="img-box">
+                                <img src="assets/img/icon-location.svg" class="img-fluid" alt="location">
+                            </div>
+                            <div class="text-box">
+                                <h6>Адреса для листування:</h6>
+                                <span>вулиця Володимирська, 43, Київ, 01034</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="img-box">
+                                <img src="assets/img/icon-phone.svg" class="img-fluid" alt="phone">
+                            </div>
+                           <div class="text-box">
+                                <h6>Контактні телефони:</h6>
+                                <a href="tel:+380559586609">+380 (55) 958-66-09</a>
+                                <a href="tel:+380999586609">+380 (99) 958-66-09</a>
+                           </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="img-box">
+                                <img src="assets/img/icon-clock.svg" class="img-fluid" alt="clock">
+                            </div>
+                            <div class="text-box">
+                                <h6>Час роботи:</h6>
+                                <span>Понеділок — п’ятниця: з 9:00 до 20:00</span>
+                                <span>Субота — неділя: з 10:00 до 18:00 </span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="img-box">
+                                <img src="assets/img/icon-location.svg" class="img-fluid" alt="location">
+                            </div>
+                            <div class="text-box">
+                                <h6>Електронна пошта:</h6>
+                                <a href="mailto:info@pershazirka.ua">info@pershazirka.ua</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-questions">
+                        <div class="form-tab">
+                            <h4>Відправити повідомлення</h4>
+                            <p class="form-tab__descr"><span>*</span> усі поля обов’язкові</p>
+                            <form action="">
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="Як до вас звертатися?" />
+                                    <div class="icon-wrap">
+                                        <i class="icon-svg icon-user-inp"> </i>
+                                        <div class="note">
+                                            Ваші ім’я та прізвище. Більше даних ви можете ввести у
+                                            приватному кабінеті. Для авторизації натисніть на іконку “Вхід у
+                                            шапці сайту”
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="Ваш Email" />
+                                    <div class="icon-wrap">
+                                        <i class="icon-svg icon-mail"> </i>
+                                        <div class="note">
+                                            Ваші ім’я та прізвище. Більше даних ви можете ввести у
+                                            приватному кабінеті. Для авторизації натисніть на іконку “Вхід у
+                                            шапці сайту”
+                                        </div>
+                                    </div>
+                                </div>
+                                <textarea placeholder="Текст повідомлення"></textarea>
+                                <button href="#" class="btn btn-primary">
+                                    <i class="icon-svg icon-airplane"></i>
+                                    <span>Надіслати повідомлення</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@@include('templates/subscribe.html')
+@@include('templates/footer.html')

@@ -22,6 +22,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "sass/page/home"; 
 @import "sass/page/action"; 
 @import "sass/page/project-item"; 
+@import "sass/page/about-page"; 
 @import "sass/other/_pagination.scss";
 @import "sass/other/templatePageBlock";
 @import "sass/other/project-tab";
@@ -31,6 +32,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "sass/other/slider-templates";
 @import "sass/other/about-block";
 @import "sass/other/subscribe-block";
+@import "sass/other/img-grid";
+@import "sass/other/accordion-template";
+@import "sass/other/form-questions";
 
 @import "sass/other/seo-block";
 @import "sass/wp-style";

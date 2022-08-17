@@ -1,0 +1,38 @@
+:root {
+    --img-height: 239px;
+    --margin-top: -229px
+}
+ 
+
+.img-grid {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    &__row{
+        display: flex;
+        min-width: calc(100% + 20px);
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    &__img{
+        width: calc(33.33333% - 20px);
+        height: var(--img-height);
+        background-color: bisque;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        overflow: hidden;
+        background-image: url(http://placeimg.com/640/480);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+       &:nth-child(even) {
+        height: calc(var(--img-height) * 2);
+       
+       }
+       &:nth-child(2n + 4) {
+        margin-top: var(--margin-top);
+       }
+    }
+}

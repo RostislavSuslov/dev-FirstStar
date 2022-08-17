@@ -5,7 +5,8 @@
 .modal-dialog {
 	display: flex;
 	align-items: center;
-	max-width: 890px;
+	// max-width: 890px;
+	max-width: 660px;
 	min-height: calc(100% - (5rem * 2));
 }
 
@@ -42,13 +43,20 @@
 			}
 		}
 	}
+
+	.btn-close {
+		position: absolute;
+		top: 25px;
+		right: 15px;
+		z-index: 1;
+	}
 }
 
 .modal-content {
-	border-radius: 0;
 	border: none;
-	padding: 30px 40px;
-
+	// padding: 30px 40px;
+	padding: 0;
+	border-radius: 15px;
 	p {
 		margin-top: 10px;
 	}
