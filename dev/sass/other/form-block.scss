@@ -85,7 +85,7 @@
 
         .btn-tab {
             width: 240px;
-            height: 48px;
+            min-height: 48px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -95,8 +95,9 @@
             background: #edf1f4;
             margin: 0px 10px;
             position: relative;
-
             cursor: pointer;
+            text-align: center;
+            padding: 10px;
 
             &::after {
                 content: "";

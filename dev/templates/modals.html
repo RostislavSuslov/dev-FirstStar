@@ -59,7 +59,7 @@
                         </select>
                         <textarea placeholder="Опишіть свій проект"></textarea>
                         <input type="hidden" value="Я хочу допомогти" />
-                        <button href="#" class="btn btn-primary">
+                        <button class="btn btn-primary">
                             <i class="icon-svg icon-plus"></i>
                             <span>Зробити внесок</span>
                         </button>
@@ -107,15 +107,107 @@
                
                 <textarea placeholder="Опишіть свій проект"></textarea>
                 <input type="hidden" value="Я хочу допомогти"/>
-                <button href="#" class="btn btn-primary">
+                <button class="btn btn-primary">
                     <i class="icon-svg icon-plus"></i>
                     <span>Залишити відгук</span>
                 </button>
             </form>
         </div>
         </div>
-        
       </div>
     </div>
-  </div>
+</div>
 
+<!-- Modal -->
+<div class="modal fade" id="formRequest" tabindex="-1" aria-labelledby="formRequestLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="form-tab">
+            <div class="form-tab__tabs">
+               
+                <div class="btn-tab btn-tab--active">я хочу запропонувати заявку на проект</div>
+            </div>
+            <p class="form-tab__descr"><span>*</span> усі поля обов’язкові</p>
+            <form action="">
+                <div class="input-wrap">
+                    <input type="text" placeholder="Як до вас звертатися?" />
+                    <div class="icon-wrap">
+                        <i class="icon-svg icon-user-inp"> </i>
+                        <div class="note">
+                            Ваші ім’я та прізвище.
+                        </div>
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <input type="tel" placeholder="Ваш номер телефону" />
+                    <div class="icon-wrap">
+                        <i class="icon-svg icon-phone-inp"> </i>
+                        <div class="note">
+                            Введіть свій номер телефону
+                        </div>
+                    </div>
+                </div>
+               
+                <textarea placeholder="Опишіть свій проект"></textarea>
+                <input type="hidden" value="Зробити заявку на проект"/>
+                <button class="btn btn-primary">
+                    <i class="icon-svg icon-plus"></i>
+                    <span>Зробити заявку</span>
+                </button>
+            </form>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="formMessage" tabindex="-1" aria-labelledby="formMessageLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="form-tab">
+            <div class="form-tab__tabs">
+               
+                <div class="btn-tab btn-tab--active">я хочу написати повідомлення</div>
+            </div>
+            <p class="form-tab__descr"><span>*</span> усі поля обов’язкові</p>
+            <form action="">
+                <div class="input-wrap">
+                    <input type="text" placeholder="Як до вас звертатися?" />
+                    <div class="icon-wrap">
+                        <i class="icon-svg icon-user-inp"> </i>
+                        <div class="note">
+                            Ваші ім’я та прізвище.
+                        </div>
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <input type="tel" placeholder="Ваш номер телефону" />
+                    <div class="icon-wrap">
+                        <i class="icon-svg icon-phone-inp"> </i>
+                        <div class="note">
+                            Введіть свій номер телефону
+                        </div>
+                    </div>
+                </div>
+               
+                <textarea placeholder="Опишіть свій проект"></textarea>
+                <input type="hidden" value="Відправити повідомлення"/>
+                <button class="btn btn-primary">
+                    <i class="icon-svg icon-plus"></i>
+                    <span>Відправити повідомлення</span>
+                </button>
+            </form>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>

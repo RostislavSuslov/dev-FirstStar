@@ -196,20 +196,10 @@ input[type="tel"] {
 
 @media screen and (max-width: 767px) {
 	.modal-dialog {
-		margin: 15px 10px 15px 15px;
-
-		[type="button"]:not(.close),
-		[type="submit"] {
-			width: 100%;
-			justify-content: center;
-		}
+		margin: 15px;
 	}
 
-	.modal-content {
-		border-radius: 0;
-		border: none;
-		padding: 20px 0px;
-	}
+	 
 
 	.form-subscribe,
 	.form-callback {
