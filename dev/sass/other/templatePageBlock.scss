@@ -359,7 +359,13 @@ section {
         margin: 72px auto;
     }
 }
-
+.reviews {
+    .btn-row {
+        display: flex;
+        justify-content: center;
+        margin: 120px auto 90px;
+    }
+}
 .reviews-list {
     margin: 120px auto;
 

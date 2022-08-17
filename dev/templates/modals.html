@@ -1,6 +1,80 @@
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="form-tab">
+                    <div class="form-tab__tabs">
+
+                        <div class="btn-tab btn-tab--active">Я хочу допомогти</div>
+                    </div>
+                    <p class="form-tab__descr"><span>*</span> усі поля обов’язкові</p>
+                    <form action="">
+                        <div class="input-wrap">
+                            <input type="text" placeholder="Як до вас звертатися?" />
+                            <div class="icon-wrap">
+                                <i class="icon-svg icon-user-inp"> </i>
+                                <div class="note">
+                                    Ваші ім’я та прізвище. Більше даних ви можете ввести у
+                                    приватному кабінеті. Для авторизації натисніть на іконку “Вхід у
+                                    шапці сайту”
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="tel" placeholder="Ваш номер телефону" />
+                            <div class="icon-wrap">
+                                <i class="icon-svg icon-phone-inp"> </i>
+                                <div class="note">
+                                    Ваші ім’я та прізвище. Більше даних ви можете ввести у
+                                    приватному кабінеті. Для авторизації натисніть на іконку “Вхід у
+                                    шапці сайту”
+                                </div>
+                            </div>
+                        </div>
+                        <select class="select">
+                            <option data-display="Де ви плануєте провести подію?" disabled>
+                                Де ви плануєте провести подію?
+                            </option>
+                            <option value="1">Подія 1</option>
+                            <option value="2">Подія 2</option>
+                            <option value="3">Подія 3</option>
+                            <option value="4">Подія 4</option>
+                        </select>
+                        <select class="select">
+                            <option data-display="Яку допомогу ви плануєте?" disabled>
+                                Яку допомогу ви плануєте?
+                            </option>
+                            <option value="Хворим дітям">Хворим дітям</option>
+                            <option value="Збройним силам України">
+                                Збройним силам України
+                            </option>
+                            <option value="Вимушеним переселенцям">
+                                Вимушеним переселенцям
+                            </option>
+                            <option value="Літнім людям">Літнім людям</option>
+                            <option value="Інше">Вуличним тваринам</option>
+                        </select>
+                        <textarea placeholder="Опишіть свій проект"></textarea>
+                        <input type="hidden" value="Я хочу допомогти" />
+                        <button href="#" class="btn btn-primary">
+                            <i class="icon-svg icon-plus"></i>
+                            <span>Зробити внесок</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="leaveFeedback" tabindex="-1" aria-labelledby="leaveFeedbackLabel" aria-hidden="true">
+    <div class="modal-dialog">
       <div class="modal-content">
         
         <div class="modal-body">
@@ -8,7 +82,7 @@
           <div class="form-tab">
             <div class="form-tab__tabs">
                
-                <div class="btn-tab btn-tab--active">Я хочу допомогти</div>
+                <div class="btn-tab btn-tab--active">Я хочу залишити відгук</div>
             </div>
             <p class="form-tab__descr"><span>*</span> усі поля обов’язкові</p>
             <form action="">
@@ -17,51 +91,25 @@
                     <div class="icon-wrap">
                         <i class="icon-svg icon-user-inp"> </i>
                         <div class="note">
-                            Ваші ім’я та прізвище. Більше даних ви можете ввести у
-                            приватному кабінеті. Для авторизації натисніть на іконку “Вхід у
-                            шапці сайту”
+                            Ваші ім’я та прізвище.
                         </div>
                     </div>
                 </div>
                 <div class="input-wrap">
-                    <input type="text" placeholder="Ваш номер телефону" />
+                    <input type="tel" placeholder="Ваш номер телефону" />
                     <div class="icon-wrap">
                         <i class="icon-svg icon-phone-inp"> </i>
                         <div class="note">
-                            Ваші ім’я та прізвище. Більше даних ви можете ввести у
-                            приватному кабінеті. Для авторизації натисніть на іконку “Вхід у
-                            шапці сайту”
+                            Введіть свій номер телефону
                         </div>
                     </div>
                 </div>
-                <select class="select">
-                    <option data-display="Де ви плануєте провести подію?" disabled>
-                        Де ви плануєте провести подію?
-                    </option>
-                    <option value="1">Подія 1</option>
-                    <option value="2">Подія 2</option>
-                    <option value="3">Подія 3</option>
-                    <option value="4">Подія 4</option>
-                </select>
-                <select class="select">
-                    <option data-display="Яку допомогу ви плануєте?" disabled>
-                        Яку допомогу ви плануєте?
-                    </option>
-                    <option value="Хворим дітям">Хворим дітям</option>
-                    <option value="Збройним силам України">
-                        Збройним силам України
-                    </option>
-                    <option value="Вимушеним переселенцям">
-                        Вимушеним переселенцям
-                    </option>
-                    <option value="Літнім людям">Літнім людям</option>
-                    <option value="Інше">Вуличним тваринам</option>
-                </select>
+               
                 <textarea placeholder="Опишіть свій проект"></textarea>
                 <input type="hidden" value="Я хочу допомогти"/>
                 <button href="#" class="btn btn-primary">
                     <i class="icon-svg icon-plus"></i>
-                    <span>Зробити внесок</span>
+                    <span>Залишити відгук</span>
                 </button>
             </form>
         </div>
@@ -70,3 +118,4 @@
       </div>
     </div>
   </div>
+
