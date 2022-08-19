@@ -224,9 +224,7 @@
         display: none;
     }
 
-    .header__lang-wrap {
-        display: none;
-    }
+ 
 
     .header .menu-item-has-children .sub-menu {
         top: 62px;
@@ -395,13 +393,18 @@
         margin-left: auto;
         margin-right: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         position: absolute;
         padding-top: 10px;
         left: 0;
         right: 0;
         bottom: 20px;
+        .btn {
+            width: 100%;
+            max-width: 280px;
+            justify-content: center;
+        }
     }
 
     .btn-menu {
