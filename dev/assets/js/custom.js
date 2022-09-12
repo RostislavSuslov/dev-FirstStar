@@ -46,12 +46,24 @@ $(document).ready(function() {
 
     $(".select").niceSelect();
 
-    $(".btn-tab").click(function() {
-        const text = $(this).text();
+    $("#btn-need").click(function() {
+       
         $(".btn-tab").removeClass("btn-tab--active");
         $(this).addClass("btn-tab--active");
-        $("#tab-value").val(text);
+       
+        $("#need-to-help").removeClass('d-none');
+        $("#want-to-help").addClass('d-none');
     });
+
+    $("#btn-want").click(function() {
+         
+        $(".btn-tab").removeClass("btn-tab--active");
+        $(this).addClass("btn-tab--active");
+       
+        $("#need-to-help").addClass('d-none');
+        $("#want-to-help").removeClass('d-none');
+    });
+
 
     const meters = document.querySelectorAll("svg[data-value] .meter");
 

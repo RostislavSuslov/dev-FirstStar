@@ -21,11 +21,11 @@
         </p>
         <div class="form-tab">
             <div class="form-tab__tabs">
-                <div class="btn-tab btn-tab--active">Я потребую допомоги</div>
-                <div class="btn-tab">Я хочу допомогти</div>
+                <div id="btn-need" class="btn-tab btn-tab--active">Я потребую допомоги</div>
+                <div id="btn-want" class="btn-tab">Я хочу допомогти</div>
             </div>
             <p class="form-tab__descr"><span>*</span> усі поля обов’язкові</p>
-            <form action="">
+            <form id="need-to-help"  action="">
                 <div class="input-wrap">
                     <input type="text" placeholder="Як до вас звертатися?" />
                     <div class="icon-wrap">
@@ -68,12 +68,63 @@
                     <option value="Інше">Вуличним тваринам</option>
                 </select>
                 <textarea placeholder="Опишіть свій проект"></textarea>
-                <input type="hidden" value="" id="tab-value" />
+                <input type="hidden" value="need-to-help"/>
                 <button class="btn btn-primary">
                     <i class="icon-svg icon-plus"></i>
                     <span>Зробити внесок</span>
                 </button>
             </form>
+            
+            <form id="want-to-help" class="d-none " action="">
+                <div class="input-wrap">
+                    <input type="text" placeholder="Як до вас звертатися?" />
+                    <div class="icon-wrap">
+                        <i class="icon-svg icon-user-inp"> </i>
+                        <div class="note">
+                            Ваші ім’я та прізвище. 
+                        </div>
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <input type="tel" placeholder="Ваш номер телефону" />
+                    <div class="icon-wrap">
+                        <i class="icon-svg icon-phone-inp"> </i>
+                        <div class="note">
+                            Введіть свій номер телефону 
+                        </div>
+                    </div>
+                </div>
+                <select class="select">
+                    <option data-display="Де ви плануєте провести подію?" disabled>
+                        Де ви плануєте провести подію?
+                    </option>
+                    <option value="1">Подія 1</option>
+                    <option value="2">Подія 2</option>
+                    <option value="3">Подія 3</option>
+                    <option value="4">Подія 4</option>
+                </select>
+                <select class="select">
+                    <option data-display="Яку допомогу ви плануєте?" disabled>
+                        Яку допомогу ви плануєте?
+                    </option>
+                    <option value="Хворим дітям">Хворим дітям</option>
+                    <option value="Збройним силам України">
+                        Збройним силам України
+                    </option>
+                    <option value="Вимушеним переселенцям">
+                        Вимушеним переселенцям
+                    </option>
+                    <option value="Літнім людям">Літнім людям</option>
+                    <option value="Інше">Вуличним тваринам</option>
+                </select>
+                <textarea placeholder="Опишіть свій проект"></textarea>
+                <input type="hidden" value="want-to-help"/>
+                <button class="btn btn-primary">
+                    <i class="icon-svg icon-plus"></i>
+                    <span>Зробити внесок</span>
+                </button>
+            </form>
+           
         </div>
     </div>
 </section>
