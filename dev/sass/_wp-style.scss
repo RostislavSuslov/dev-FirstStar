@@ -113,11 +113,7 @@ blockquote {
 }
 
 
-.wpcf7-spinner {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+
 
 .attention{
     margin: 36px auto 48px;
@@ -129,4 +125,31 @@ blockquote {
     p {
         color: #0B305D;
     }
+}
+
+
+
+
+/*form validation*/
+.wpcf7 form .wpcf7-response-output {
+    border-radius: 6px;
+    padding: 15px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #dc3232;
+    text-align: center;
+}
+
+.wpcf7-spinner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.wpcf7-not-valid-tip {
+    color: #dc3232;
+    font-size: 0.75em;
+    padding: 5px 20px;
+    font-weight: 600;
+    display: block;
 }
