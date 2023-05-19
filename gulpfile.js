@@ -6,7 +6,7 @@ const dirs = {
 
 // Определим необходимые инструменты
 const gulp = require('gulp');
-const sass = require("gulp-sass");
+const sass = require('gulp-sass')(require('sass'));
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
@@ -28,7 +28,7 @@ const include = require('gulp-file-include'); //include
 const htmlbeautify = require('gulp-html-beautify');
 const spritesmith = require('gulp.spritesmith');
 const merge = require('merge-stream');
-const buffer = require('vinyl-buffer');
+ 
 
 // ЗАДАЧА: Компиляция препроцессора
 gulp.task('sass', function(){
